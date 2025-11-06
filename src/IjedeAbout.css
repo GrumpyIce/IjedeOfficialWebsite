@@ -1,0 +1,145 @@
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background: #f7f9fb;
+  color: #333;
+  font-family: 'Inter', sans-serif;
+}
+
+.back-home-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #00c853, #0d47a1);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.back-home-btn:hover {
+  transform: translateY(-3px);
+}
+
+/* HERO */
+.about-hero {
+  text-align: center;
+  background: linear-gradient(135deg, #0d47a1, #00c853);
+  color: #fff;
+  padding: 50px 20px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+.about-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+.about-hero p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* SECTION BASE */
+.about-section {
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.about-section h2 {
+  color: #0d47a1;
+  border-left: 6px solid #00c853;
+  padding-left: 12px;
+  margin-bottom: 16px;
+}
+.about-section p {
+  color: #444;
+  line-height: 1.65;
+  margin-bottom: 10px;
+}
+
+/* CARD GRID */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.info-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.info-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.info-card h3 {
+  margin: 12px 16px 0;
+  color: #00796b;
+}
+.info-card p {
+  margin: 8px 16px 16px;
+  color: #555;
+}
+
+/* GALLERIES — now 3 per row */
+.masq-gallery,
+.school-gallery,
+.tour-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+.masq-image-wrapper,
+.school-image-wrapper,
+.tour-image-wrapper {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+.masq-image-wrapper img,
+.school-image-wrapper img,
+.tour-image-wrapper img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.masq-image-wrapper img:hover,
+.school-image-wrapper img:hover,
+.tour-image-wrapper img:hover {
+  transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .masq-gallery,
+  .school-gallery,
+  .tour-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .masq-gallery,
+  .school-gallery,
+  .tour-gallery {
+    grid-template-columns: 1fr;
+  }
+  .masq-image-wrapper img,
+  .school-image-wrapper img,
+  .tour-image-wrapper img {
+    height: 220px;
+  }
+}

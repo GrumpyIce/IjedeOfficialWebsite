@@ -1,0 +1,41 @@
+/* ===================== */
+/* Top Info Bar */
+/* ===================== */
+.topbar {
+  width: 100%;
+  background-color: #006400; /* deep green for govt official look */
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 30px;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* slight shadow under topbar */
+  position: relative;
+  z-index: 1000;
+}
+
+.topbar-left {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.topbar-icon {
+  font-size: 16px;
+}
+
+.topbar-right a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.topbar-right a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,170 @@
+/* src/AchievementsPage.css */
+
+/* Global */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+  background: #f9fafb;
+  color: #333;
+}
+
+/* Achievements Page Container */
+.achievements-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Back Home Button */
+.back-home-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 18px;
+  margin-bottom: 30px;
+  background: #0d47a1;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+.back-home-btn:hover {
+  background: #08306b;
+}
+.back-home-btn::before {
+  content: "←";
+  font-size: 16px;
+}
+
+/* Hero Section */
+.achievements-hero {
+  text-align: center;
+  padding: 50px 20px 35px 20px;
+  background: #0d47a1;
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+.achievements-hero h1 {
+  font-size: 2.3rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+.achievements-hero .quote {
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+.achievements-hero .intro {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0.95;
+}
+
+/* Collapsible Sections */
+.achievements-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.achievement-section {
+  border-radius: 6px;
+  overflow: hidden;
+  background: white;
+  border: 1px solid #e5e7eb;
+  transition: box-shadow 0.2s ease;
+}
+.achievement-section:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.section-header {
+  width: 100%;
+  padding: 14px 20px;
+  text-align: left;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #0d47a1;
+  background-color: #f4f6f8;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.section-header:hover {
+  background-color: #e5e7eb;
+}
+.section-header.active {
+  background-color: #0d47a1;
+  color: white;
+}
+
+.toggle-icon {
+  font-size: 1.2rem;
+}
+
+/* Collapsible Content */
+.section-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  padding: 0 20px;
+  background-color: #fafafa;
+}
+
+.section-content.open {
+  max-height: 800px; /* enough for long content */
+  padding: 12px 20px;
+}
+
+.section-content ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.section-content li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .achievements-hero h1 {
+    font-size: 2rem;
+  }
+  .achievements-hero .quote {
+    font-size: 1rem;
+  }
+  .achievements-hero .intro {
+    font-size: 0.95rem;
+  }
+  .section-header {
+    font-size: 0.95rem;
+    padding: 12px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .achievements-hero h1 {
+    font-size: 1.6rem;
+  }
+  .achievements-hero .quote {
+    font-size: 0.9rem;
+  }
+  .achievements-hero .intro {
+    font-size: 0.9rem;
+  }
+}

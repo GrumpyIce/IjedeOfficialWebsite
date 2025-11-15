@@ -1,12 +1,12 @@
 /* ===================== */
-/* Navbar */
+/* Navbar Styles */
 /* ===================== */
 .navbar {
   width: 100%;
   background-color: #ffffff;
   position: sticky;
   top: 0;
-  z-index: 999; /* stays above hero section */
+  z-index: 999;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
 }
@@ -23,6 +23,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .nav-left {
@@ -61,7 +62,7 @@
   color: #006400;
 }
 
-.nav-right .nav-btn {
+.nav-btn {
   background-color: #006400;
   color: white;
   padding: 8px 16px;
@@ -72,9 +73,10 @@
   transition: background 0.3s ease;
 }
 
-.nav-right .nav-btn:hover {
+.nav-btn:hover {
   background-color: #004d00;
 }
+
 /* Hamburger - mobile only */
 .hamburger {
   display: none;
@@ -83,52 +85,69 @@
   width: 26px;
   height: 20px;
   cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  z-index: 1001;
 }
 
 .hamburger span {
   display: block;
   height: 3px;
   width: 100%;
-  background: var(--text);
+  background: #333;
   border-radius: 2px;
   transition: all 0.3s ease;
 }
 
-.hamburger.open span:nth-child(1) {
+.hamburger.active span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
-.hamburger.open span:nth-child(2) {
+.hamburger.active span:nth-child(2) {
   opacity: 0;
 }
-.hamburger.open span:nth-child(3) {
+.hamburger.active span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
 /* Mobile nav */
 @media (max-width: 768px) {
-  .nav-links {
-    position: absolute;
-    top: 72px; /* below navbar */
-    right: 0;
-    background: #fff;
-    flex-direction: column;
-    width: 200px;
-    padding: 20px;
-    gap: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    transform: translateX(100%);
-    transition: transform 0.3s ease;
-  }
-
-  .nav-links.mobile-active {
-    transform: translateX(0);
-  }
-
   .hamburger {
     display: flex;
   }
 
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background: #fff;
+    flex-direction: column;
+    padding: 60px 20px;
+    gap: 20px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    box-shadow: -4px 0 15px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.show {
+    transform: translateX(0);
+  }
+
   .nav-links li {
-    text-align: right;
+    text-align: left;
+  }
+
+  /* Overlay behind mobile menu */
+  .nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    z-index: 999;
   }
 }

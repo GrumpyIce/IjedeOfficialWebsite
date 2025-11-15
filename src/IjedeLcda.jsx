@@ -669,20 +669,20 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Logo from "./assets/ijede-logo.jpg";
 import HerBoldImage from "./assets/her bold image.jpg";
-import Leg3 from "./assets/leg3.jpg"; // ✅ newly added image
+import Leg3 from "./assets/leg3.jpg";
 import IjdBuilding from "./assets/ijd building.jpg";
 import Car3 from "./assets/car3.jpg";
 import "./IjedeLcda.css";
-import NewsUpdates from "./NewsUpdates"; // ✅ only one import now
+import NewsUpdates from "./NewsUpdates";
 import Footer from "./Footer";
 import ChairmanSection from "./ChairmanSection";
-import Newsletter from "./Newsletter"; // ✅ keep newsletter import
+import Newsletter from "./Newsletter";
 
 export default function IjedeLcda() {
   const [currentHero, setCurrentHero] = useState(0);
   const [scrolled, setScrolled] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
-  // ✅ Added Leg3 as the 3rd image in the hero slideshow
   const heroImages = [Logo, HerBoldImage, Leg3, Car3];
 
   // Hero slideshow
@@ -693,12 +693,14 @@ export default function IjedeLcda() {
     return () => clearInterval(interval);
   }, []);
 
-  // Scroll detection for navbar
+  // Scroll detection
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const toggleMobileMenu = () => setMobileOpen(!mobileOpen);
 
   return (
     <div className="ijede-container">
@@ -715,22 +717,40 @@ export default function IjedeLcda() {
 
       {/* Navbar */}
       <header className={`navbar ${scrolled ? "scrolled" : ""}`}>
-        <nav className="nav-content">
+        <div className="nav-content">
+          {/* Left: Logo + Brand */}
           <div className="nav-left">
             <img src={Logo} alt="Ijede LCDA Logo" className="logo-img" />
             <span className="brand-name">Ijede LCDA</span>
           </div>
-          <ul className="nav-links">
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/projects">Projects</Link></li>
-            <li><Link to="/achievements">Achievements</Link></li>
-            <li><Link to="/schools">Schools</Link></li>
+
+          {/* Hamburger for Mobile */}
+          <button
+            className={`hamburger ${mobileOpen ? "active" : ""}`}
+            onClick={toggleMobileMenu}
+            aria-label="Toggle navigation"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          {/* Nav Links */}
+          <ul className={`nav-links ${mobileOpen ? "show" : ""}`}>
+            <li><Link to="/" onClick={() => setMobileOpen(false)}>Home</Link></li>
+            <li><Link to="/about" onClick={() => setMobileOpen(false)}>About</Link></li>
+            <li><Link to="/projects" onClick={() => setMobileOpen(false)}>Projects</Link></li>
+            <li><Link to="/achievements" onClick={() => setMobileOpen(false)}>Achievements</Link></li>
+            <li>
+              <Link to="/contact" className="nav-btn" onClick={() => setMobileOpen(false)}>
+                Contact Us
+              </Link>
+            </li>
           </ul>
-          <div className="nav-right">
-            <a href="#contact" className="nav-btn">Contact Us</a>
-          </div>
-        </nav>
+
+          {/* Mobile Overlay */}
+          {mobileOpen && <div className="nav-overlay" onClick={toggleMobileMenu}></div>}
+        </div>
       </header>
 
       {/* Hero Section */}
@@ -771,7 +791,6 @@ export default function IjedeLcda() {
             <br /><br />
             Together, we are building a legacy of progress, unity, and excellence.
           </p>
-          {/* ✅ Updated Button Text and Link */}
           <Link to="/about" className="green-btn">
             Explore About Ijede
           </Link>
@@ -799,11 +818,10 @@ export default function IjedeLcda() {
         </div>
       </section>
 
-
       {/* Newsletter Section */}
       <Newsletter />
 
-          {/* News & Updates */}
+      {/* News & Updates */}
       <NewsUpdates />
 
       {/* Footer */}
@@ -811,4 +829,3 @@ export default function IjedeLcda() {
     </div>
   );
 }
-

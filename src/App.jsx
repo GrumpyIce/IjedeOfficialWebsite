@@ -5,6 +5,7 @@ import ProjectsPage from "./ProjectsPage";
 import AchievementsPage from "./AchievementsPage.jsx";
 import IjedeAbout from "./IjedeAbout.jsx"; 
 import ScrollToTop from "./ScrollToTop";
+import ContactPage from "./ContactPage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/about" element={<IjedeAbout />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/achievements" element={<AchievementsPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </>
   );

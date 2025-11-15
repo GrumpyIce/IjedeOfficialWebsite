@@ -70,7 +70,7 @@ export default function ChairmanSection() {
 
           {activeTab === "vision" && (
             <p>
-              Looking ahead, our vision is to position Ijede LCDA as a model 
+              Looking ahead, our vision is to position Ijede LCDA as a modern 
               community that thrives on sustainable growth, innovation, and inclusivity.  
               We are committed to implementing policies and programs that address the 
               needs of our people, foster unity, and promote social and economic progress.  

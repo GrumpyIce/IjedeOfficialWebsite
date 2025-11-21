@@ -1,14 +1,11 @@
 import React from "react";
 import "./Footer.css";
-import { FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6"; // X/Twitter icon is in fa6
-
+import { FaFacebookF, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
-
 
   return (
     <footer className="footer">
@@ -40,17 +37,43 @@ export default function Footer() {
         <div className="footer-section">
           <h3>Follow Us</h3>
           <div className="social-icons">
-            <a href="#"><FaFacebookF /></a>
-            <a href="#"><FaXTwitter /></a>
-            <a href="#"><FaInstagram /></a>
-            <a href="#"><FaTiktok /></a>
+            <a
+              href="https://www.facebook.com/share/16JQ9DDTku/?mibextid=wwXIfr"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebookF />
+            </a>
+            <a
+              href="https://www.instagram.com/motunrayogbadeboalogba?igsh=bXNrcjUzZ3pnbjR6"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram />
+            </a>
           </div>
         </div>
       </div>
 
       {/* Bottom note */}
       <div className="footer-bottom">
-        <p>© 2025 Created by Majolagbe Fahizol Damilola</p>
+        <p>© 2025 Created by Majolagbe Fahizol</p>
+        <div className="personal-socials">
+          <a
+            href="https://www.instagram.com/__fahizol?igsh=MWp1dWdmZmhreWl5YQ%3D%3D&utm_source=qr"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
+          <a
+            href="http://linkedin.com/in/fahizol-majolagbe"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+        </div>
       </div>
 
       {/* Scroll to top */}

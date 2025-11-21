@@ -201,8 +201,8 @@ import Footer from "./Footer";
 import "./IjedeAbout.css";
 
 /* Market & Healthcare assets */
-import Market from "./assets/market.jpg";
-import Market1 from "./assets/market1.jpg";
+import Market from "./assets/marketnew2.jpg";
+import Market1 from "./assets/marketnew.jpg";
 import IjdHospital from "./assets/ijdhospital.jpg";
 import PHC from "./assets/phc.jpg";
 
@@ -264,7 +264,7 @@ export default function IjedeAbout() {
 
       <main className="about-container">
         <div className="back-btn-container">
-          <Link to="/" className="back-home-btn">← Back Home</Link>
+          <Link to="/" className="back-home-btn"> Back Home</Link>
         </div>
 
         {/* Hero */}
@@ -397,7 +397,7 @@ export default function IjedeAbout() {
         </section>
       </main>
 
-      <div className="footer-wrapper"><Footer /></div>
+      <Footer />
     </div>
   );
 }

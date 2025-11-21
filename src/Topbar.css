@@ -39,3 +39,21 @@
 .topbar-right a:hover {
   text-decoration: underline;
 }
+/* === Mobile View === */
+@media (max-width: 768px) {
+  .topbar {
+    flex-direction: column; /* stack left and right vertically */
+    align-items: center;    /* center content horizontally */
+    gap: 6px;               /* spacing between text and email */
+    text-align: center;     /* center text inside */
+  }
+
+  .topbar-left,
+  .topbar-right {
+    width: 100%; /* optional, keeps full width but centered */
+  }
+
+  .topbar-right {
+    justify-content: center; /* center the email row */
+  }
+}

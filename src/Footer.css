@@ -66,3 +66,21 @@
 .scroll-to-top:hover {
   background: #ffaa00;
 }
+
+/* Personal socials under credit line */
+.personal-socials {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.personal-socials a {
+  color: #ddd;          /* matches footer text color */
+  font-size: 16px;      /* slightly smaller than main council icons */
+  transition: color 0.3s ease;
+}
+
+.personal-socials a:hover {
+  color: #ffcc00;       /* matches hover color of council icons */
+}

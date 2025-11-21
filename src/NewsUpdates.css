@@ -1,12 +1,15 @@
 /* src/NewsUpdates.css */
 
+/* Container */
 .news-section {
   padding: 60px 20px;
   background: #f9fafc;
   max-width: 1200px;
   margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Header */
 .news-header {
   text-align: center;
   margin-bottom: 40px;
@@ -48,6 +51,7 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
+/* Image wrapper */
 .news-img-wrapper {
   position: relative;
   overflow: hidden;
@@ -65,6 +69,7 @@
   transform: scale(1.05);
 }
 
+/* Date badge */
 .news-date {
   position: absolute;
   bottom: 12px;
@@ -77,12 +82,13 @@
   font-weight: 600;
 }
 
+/* Card content */
 .news-content {
   padding: 20px;
 }
 
 .news-content h3 {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   color: #222;
   margin-bottom: 10px;
   font-weight: 600;
@@ -91,10 +97,11 @@
 .news-content p {
   font-size: 0.95rem;
   color: #555;
-  line-height: 1.5;
+  line-height: 1.6;
   margin-bottom: 15px;
 }
 
+/* Read more link */
 .read-more {
   font-size: 0.95rem;
   color: #1c3d6e;
@@ -105,4 +112,34 @@
 
 .read-more:hover {
   color: #2ecc71; /* Green accent */
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.pagination button {
+  background: #fff;
+  color: #1c3d6e;
+  border: 1px solid #1c3d6e;
+  padding: 8px 14px;
+  margin: 0 5px;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pagination button:hover {
+  background: #1c3d6e;
+  color: #fff;
+}
+
+.pagination button.active {
+  background: #2ecc71;
+  border-color: #2ecc71;
+  color: #fff;
 }

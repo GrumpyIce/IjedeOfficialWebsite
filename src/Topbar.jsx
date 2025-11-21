@@ -5,7 +5,7 @@ export default function Topbar() {
   return (
     <div className="topbar">
       <div className="topbar-left">
-        Official Website of Ijede Local Council Development Area of Lagos State
+        Official Website of Ijede Local Council Development Area of <br /> Lagos State
       </div>
       <div className="topbar-right">
         <span className="topbar-icon">📧</span>

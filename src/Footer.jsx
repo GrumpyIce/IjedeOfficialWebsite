@@ -26,7 +26,7 @@ export default function Footer() {
         <div className="footer-section">
           <h3>Web Links</h3>
           <p>📧 info@ijede.lg.gov.ng</p>
-          <p>📞 08012345678, 09087654321</p>
+          <p>📞 07033494434, 08077790430</p>
           <p>
             🏢 The Council Secretariat <br />
             1 Madan Road, Ijede, Ikorodu, Lagos State

@@ -677,6 +677,7 @@ import NewsUpdates from "./NewsUpdates";
 import Footer from "./Footer";
 import ChairmanSection from "./ChairmanSection";
 import Newsletter from "./Newsletter";
+import HomeSection from "./HomeSection";
 
 export default function IjedeLcda() {
   const [currentHero, setCurrentHero] = useState(0);
@@ -821,6 +822,7 @@ export default function IjedeLcda() {
       {/* Newsletter Section */}
       <Newsletter />
 
+        <HomeSection />
       {/* News & Updates */}
       <NewsUpdates />
 

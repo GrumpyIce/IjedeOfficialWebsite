@@ -1,6 +1,6 @@
 import React from "react";
 import "./Newsletter.css";
-import Masq1 from "./assets/masq1.jpg"; // Tourism Day
+import CommHigh from "./assets/comm high.jpg"; // New Commissioning Image
 import Cowslo from "./assets/cowslo.jpg"; // COWLSO image import
 
 export default function Newsletter() {
@@ -9,21 +9,27 @@ export default function Newsletter() {
       <div className="newsletter-container">
         <h2 className="newsletter-heading">Highlight of the Month</h2>
 
-        {/* Tourism Day */}
+        {/* Commissioning of Legislative & Customary Court Building */}
         <div className="newsletter-card">
           <img
-            src={Masq1}
-            alt="Ijede Tourism Day 2025"
+            src={CommHigh}
+            alt="Commissioning of Legislative and Customary Court Building"
             className="newsletter-image"
           />
           <div className="newsletter-content">
-            <h3>Ijede Tourism Day 2025: Celebrating Culture and Progress</h3>
-            <p className="newsletter-date">September 30, 2025</p>
+            <h3>
+              Ijede LCDA Set to Commission New Legislative and Customary Court Building
+            </h3>
+            <p className="newsletter-date">November 26, 2025</p>
             <p>
-              Ijede LCDA hosted its maiden Tourism Day celebration in partnership with
-              Lagos Ferry Services (LAGFERRY). The event featured cultural performances,
-              art exhibitions, and guided tours along Ijede’s coastal routes, showcasing
-              the rich heritage and tourism potential of the community.
+              Ijede LCDA is set to commission its newly constructed Legislative and
+              Customary Court Building under the leadership of the Executive Chairman,
+              Hon. Motunrayo Gbadebo-Alogba.  
+              <br /><br />
+              The modern structure is designed to enhance justice administration and
+              legislative operations within the community. This development marks a
+              significant step forward in strengthening governance, improving access to
+              legal services, and supporting institutional growth for the people of Ijede.
             </p>
           </div>
         </div>

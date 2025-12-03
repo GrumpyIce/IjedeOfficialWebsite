@@ -9,7 +9,7 @@ export default function Topbar() {
       </div>
       <div className="topbar-right">
         <span className="topbar-icon">📧</span>
-        <a href="mailto:info@ijedelcda.lg.gov.ng">info@ijedelcda.lg.gov.ng</a>
+        <a href="mailto:ijedelcda@yahoo.com">ijedelcda@yahoo.com</a>
       </div>
     </div>
   );

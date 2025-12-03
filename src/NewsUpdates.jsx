@@ -84,104 +84,131 @@ export default function NewsUpdates() {
 
   useEffect(() => {
     setNews([
-      // === Page 1: Most Recent 3 News (2025) ===
+      // === NEWEST FIRST ===
+
+      // ✅ Nov 27, 2025 — Legislative Building Commissioning (ADDED)
       {
         id: 1,
-        title: "Ijede LCDA Monitors Classroom Construction at Methodist Primary School, Oke‑Eletu",
+        title: "Ijede LCDA Commissions New Legislative & Customary Court Complex",
         description:
-          "On‑site inspection of ongoing classroom construction: 6 new classrooms + toilets + perimeter fence.",
+          "Council Chairman Hon. Motunrayo Gbadebo-Alogba has commissioned a new two-storey Legislative & Customary Court Complex named after late Yeye Fausat Gbadebo-Alogba, providing modern legislative chamber and court facilities for the Council. This marks a significant milestone for legislative and judicial infrastructure in Ijede.",
         image: IjdBuilding,
-        link: "https://ikorodunewsnetwork.com/2025/11/07/ijede-council-boss-monitors-classroom-construction-at-methodist-primary-school-oke-eletu-inn-nigeria-%E2%98%86/",  
-        date: "Nov 6, 2025", // from source :contentReference[oaicite:0]{index=0}
-      },
-      {
-        id: 2,
-        title: "Ijede LCDA Launches New Classroom & Sanitation Projects",
-        description:
-          "Flag‑off of new classroom and toilet blocks in four primary schools to improve education and hygiene.",
-        image: IjdBuilding,
-        link: "https://ikorodunewsnetwork.com/2025/09/23/ijede-lcda-launches-new-classroom-and-sanitation-projects-to-boost-primary-education-inn-nigeria-%E2%98%86/",  
-        date: "Sept 23, 2025", // :contentReference[oaicite:1]{index=1}
-      },
-      {
-        id: 3,
-        title: "Senator Abiru Unveils New Classrooms & Upgraded Health Centre",
-        description:
-          "Senator Mukhail Abiru commissioned renovated classroom block at Luwasa Junior School and reopened the refurbished Abule‑Eko Primary Healthcare Centre.",
-        image: IjdBuilding,
-        link: "https://ikorodunewsnetwork.com/2025/09/19/abiru-unveils-new-classrooms-upgraded-health-centre-in-ijede-inn-nigeria-%E2%98%86/",  
-        date: "Sept 19, 2025", // :contentReference[oaicite:2]{index=2}
+        link:
+          "https://www.theimpactnewspaper.com/2025/11/27/legacy-project-ijede-chair-hon-gbadebo-alogba-commissions-legislative-customary-building/",
+        date: "Nov 27, 2025",
       },
 
-      // === Page 2: Your original 3 news (still 2025) ===
+      // Nov 12, 2025
+      {
+        id: 2,
+        title: "Ijede LCDA Achieves 100% 2025 Budget Performance",
+        description:
+          "Council reports full execution of 2025 budget — multiple projects completed; 2026 stakeholders’ consultative forum launched for future planning.",
+        image: IjdBuilding,
+        link:
+          "https://www.theimpactnewspaper.com/2025/11/12/ijede-lcda-achieves-100-y2025-budget-performance-due-to-proper-planning-council/",
+        date: "Nov 12, 2025",
+      },
+
+      // Nov 6, 2025
+      {
+        id: 3,
+        title:
+          "Ijede LCDA Monitors Classroom Construction at Methodist Primary School, Oke-Eletu",
+        description:
+          "On-site inspection of ongoing classroom construction: 6 new classrooms + toilets + perimeter fence.",
+        image: IjdBuilding,
+        link:
+          "https://ikorodunewsnetwork.com/2025/11/07/ijede-council-boss-monitors-classroom-construction-at-methodist-primary-school-oke-eletu-inn-nigeria-%E2%98%86/",
+        date: "Nov 6, 2025",
+      },
+
+      // Oct 16, 2025
       {
         id: 4,
-        title: "Ijede LCDA Launches New Classroom and Sanitation Projects",
+        title:
+          "Ijede LCDA Chairman Reaffirms Commitment to Food Security on World Food Day",
         description:
-          "Flag-off of new classroom & toilet blocks across four schools to improve education and hygiene standards in the community.",
+          "Chairperson Hon. Motunrayo Gbadebo-Alogba speaks on sustainable agriculture.",
         image: IjdBuilding,
-        link: "https://ikorodunewsnetwork.com/2025/09/23/ijede-lcda-launches-new-classroom-and-sanitation-projects-to-boost-primary-education-inn-nigeria-%E2%98%86/",
-        date: "Sept 23, 2025",
+        link:
+          "https://ikorodunewsnetwork.com/2025/10/16/ijede-lcda-chairman-reaffirms-commitment-to-food-security-sustainable-agriculture-on-world-food-day-inn/",
+        date: "Oct 16, 2025",
       },
+
+      // Sept 23, 2025
       {
         id: 5,
+        title: "Ijede LCDA Launches New Classroom & Sanitation Projects",
+        description:
+          "Flag-off of new classroom and toilet blocks in four primary schools to improve education and hygiene.",
+        image: IjdBuilding,
+        link:
+          "https://ikorodunewsnetwork.com/2025/09/23/ijede-lcda-launches-new-classroom-and-sanitation-projects-to-boost-primary-education-inn-nigeria-%E2%98%86/",
+        date: "Sept 23, 2025",
+      },
+
+      // Sept 20, 2025
+      {
+        id: 6,
         title:
           "Ijede LCDA Benefits From Abiru’s Touch: Renovated Classrooms & Health Centre Commissioned",
         description:
           "Renovated block of classrooms at Luwasa Junior School and upgraded Abule Eko Health Centre now open for residents.",
         image: IjdBuilding,
         link:
-          "https://ajasainfo.com/2025/09/20/ijede-lcda-benefits-from-abirus-touch-renovated-block-of-classrooms-at-luwasa-junior-school-abule‑eko-health-centre-commissioned-ajasa-info/",
+          "https://ajasainfo.com/2025/09/20/ijede-lcda-benefits-from-abirus-touch-renovated-block-of-classrooms-at-luwasa-junior-school-abule-eko-health-centre-commissioned-ajasa-info/",
         date: "Sept 20, 2025",
       },
-      {
-        id: 6,
-        title:
-          "Re‑elected Ijede LCDA Chairperson, Motunrayo Alogba is Lagos’ Youngest Council Boss",
-        description:
-          "Motunrayo Alogba re-elected and recognized as Lagos’ youngest council chairperson, continuing her leadership in the LCDA.",
-        image: IjdBuilding,
-        link:
-          "https://blackboxnigeria.com/re-elected-ijede-lcda-chairperson-motunrayo-alogba-is-lagos-youngest-council-boss/",
-        date: "July 13, 2025",
-      },
 
-      // === Page 3: More 2025 News (older but still 2025) ===
+      // Sept 19, 2025
       {
         id: 7,
-        title: "Ijede LCDA Chairman Reaffirms Commitment to Food Security on World Food Day",
+        title:
+          "Senator Abiru Unveils New Classrooms & Upgraded Health Centre",
         description:
-          "Chairperson Hon. Motunrayo Gbadebo‑Alogba speaks on sustainable agriculture and food security as part of her development agenda.",
+          "Senator Mukhail Abiru commissioned renovated classroom block at Luwasa Junior School and reopened the refurbished Abule-Eko Primary Healthcare Centre.",
         image: IjdBuilding,
-        link: "https://ikorodunewsnetwork.com/2025/10/16/ijede-lcda-chairman-reaffirms-commitment-to-food-security-sustainable-agriculture-on-world-food-day-inn/",
-        date: "Oct 16, 2025", // :contentReference[oaicite:3]{index=3}
+        link:
+          "https://ikorodunewsnetwork.com/2025/09/19/abiru-unveils-new-classrooms-upgraded-health-centre-in-ijede-inn-nigeria-%E2%98%86/",
+        date: "Sept 19, 2025",
       },
+
+      // May 25, 2025
       {
         id: 8,
-        title: "Hon. Aro Moshood Abiodun Flags Off 8 km Road Construction in Ijede LCDA",
+        title: "Ijede LCDA Recognizes Elemu Social Base Club",
         description:
-          "Flag-off of 8km Jimoh‑Idowu to Ama Avenue road project to improve connectivity and economic activity in Ijede.",
+          "The Elemu Social Base Club is officially recognised to advance grassroots development.",
         image: IjdBuilding,
-        link: "https://ikorodunewsnetwork.com/2025/05/04/hon-aro-moshood-abiodun-flags-off-8km-jimoh-idowu-ama-avenue-road-construction-project-in-ijede-lcda-inn-nigeria-%E2%98%86/",
-        date: "May 3, 2025", // :contentReference[oaicite:4]{index=4}
+        link:
+          "https://ikorodunewsnetwork.com/2025/05/26/ijede-lcda-recognizes-elemu-social-base-club-amid-rising-community-advocacy-inn-nigeria-%E2%98%86/",
+        date: "May 25, 2025",
       },
+
+      // May 3, 2025
       {
         id: 9,
-        title: "Ijede LCDA Recognizes Elemu Social Base Club Amid Rising Community Advocacy",
+        title:
+          "Hon. Aro Moshood Abiodun Flags Off 8 km Road Construction in Ijede LCDA",
         description:
-          "The Elemu Social Base Club is officially recognised by Ijede LCDA as a key community organization to advance grassroots development.",
+          "Flag-off of 8km Jimoh-Idowu to Ama Avenue road project to improve connectivity.",
         image: IjdBuilding,
-        link: "https://ikorodunewsnetwork.com/2025/05/26/ijede-lcda-recognizes-elemu-social-base-club-amid-rising-community-advocacy-inn-nigeria-%E2%98%86/",
-        date: "May 25, 2025", // :contentReference[oaicite:5]{index=5}
+        link:
+          "https://ikorodunewsnetwork.com/2025/05/04/hon-aro-moshood-abiodun-flags-off-8km-jimoh-idowu-ama-avenue-road-construction-project-in-ijede-lcda-inn-nigeria-%E2%98%86/",
+        date: "May 3, 2025",
       },
+
+      // Feb 26, 2025
       {
         id: 10,
-        title: "Ijede LCDA Chairperson Graduates Skilled Entrepreneurs, Equips with Start‑Up Tools",
+        title: "Ijede LCDA Graduates Skilled Entrepreneurs",
         description:
-          "317 graduates from the Skill Acquisition Centre receive sewing machines, generators, hair dryers, tile cutters and other equipment.",
+          "317 graduates from the Skill Acquisition Centre receive start-up tools.",
         image: IjdBuilding,
-        link: "https://blackboxnigeria.com/ijede-lcda-chairman-hon-motunrayo-gbadebo-alogba-graduates-skilled-entrepreneurs-equips-with-start-up-tools/",
-        date: "Feb 26, 2025", // from source date :contentReference[oaicite:6]{index=6}
+        link:
+          "https://blackboxnigeria.com/ijede-lcda-chairman-hon-motunrayo-gbadebo-alogba-graduates-skilled-entrepreneurs-equips-with-start-up-tools/",
+        date: "Feb 26, 2025",
       },
     ]);
   }, []);
@@ -189,13 +216,13 @@ export default function NewsUpdates() {
   const startIndex = (page - 1) * pageSize;
   const displayedNews = news.slice(startIndex, startIndex + pageSize);
 
+  const totalPages = Math.ceil(news.length / pageSize);
+
   return (
     <div className="news-section">
       <div className="news-header">
         <h2>Latest News & Updates</h2>
-        <p>
-          Stay informed about recent developments, projects, and community news from Ijede LCDA.
-        </p>
+        <p>Stay informed about recent developments, projects, and community news from Ijede LCDA.</p>
       </div>
 
       <div className="news-grid">
@@ -221,19 +248,17 @@ export default function NewsUpdates() {
         ))}
       </div>
 
+      {/* Pagination */}
       <div className="pagination">
-        {Array.from(
-          { length: Math.ceil(news.length / pageSize) },
-          (_, i) => (
-            <button
-              key={i + 1}
-              onClick={() => setPage(i + 1)}
-              className={page === i + 1 ? "active" : ""}
-            >
-              {i + 1}
-            </button>
-          )
-        )}
+        {Array.from({ length: totalPages }, (_, i) => (
+          <button
+            key={i + 1}
+            onClick={() => setPage(i + 1)}
+            className={page === i + 1 ? "active" : ""}
+          >
+            {i + 1}
+          </button>
+        ))}
       </div>
     </div>
   );

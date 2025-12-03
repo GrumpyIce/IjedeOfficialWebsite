@@ -188,3 +188,75 @@
     font-size: 1.9rem;
   }
 }
+
+.form-success {
+  margin-top: 15px;
+  padding: 12px;
+  background: #d4edda;
+  color: #155724;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.form-error {
+  margin-top: 15px;
+  padding: 12px;
+  background: #f8d7da;
+  color: #721c24;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 600;
+}
+
+button[disabled] {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Thank You Checkmark Animation */
+.checkmark-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.checkmark {
+  width: 80px;
+  height: 80px;
+  stroke: #4BB543;
+  stroke-width: 4;
+  stroke-miterlimit: 10;
+  animation: pop 0.5s ease forwards;
+}
+
+.checkmark-circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 4;
+  fill: none;
+  stroke: #4BB543;
+  animation: dash 0.5s ease forwards;
+}
+
+.checkmark-check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  stroke-width: 4;
+  stroke: #4BB543;
+  animation: dash 0.3s 0.5s ease forwards;
+}
+
+/* Animations */
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes pop {
+  0% { transform: scale(0); }
+  80% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}

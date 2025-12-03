@@ -25,7 +25,7 @@ export default function Footer() {
         {/* Web Links */}
         <div className="footer-section">
           <h3>Web Links</h3>
-          <p>📧 info@ijede.lg.gov.ng</p>
+          <p>📧 ijedelcda@yahoo.com</p>
           <p>📞 07033494434, 08077790430</p>
           <p>
             🏢 The Council Secretariat <br />

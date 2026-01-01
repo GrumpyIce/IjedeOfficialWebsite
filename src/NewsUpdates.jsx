@@ -72,7 +72,7 @@
 //     </div>
 //   );
 // }
-
+// src/NewsUpdates.jsx
 import React, { useEffect, useState } from "react";
 import "./NewsUpdates.css";
 import IjdBuilding from "./assets/ijd building.jpg";
@@ -86,33 +86,93 @@ export default function NewsUpdates() {
     setNews([
       // === NEWEST FIRST ===
 
-      // ✅ Nov 27, 2025 — Legislative Building Commissioning (ADDED)
+      // Dec 25, 2025 — Chair Urges Christians To Embrace Love & Kindness
       {
         id: 1,
+        title: "Ijede LCDA Chair Urges Christians To Embrace Love, Kindness At Christmas",
+        description:
+          "As Christians commemorate the birth of Jesus Christ, the Executive Chairman of Ijede LCDA, Hon. Motunrayo Gbadebo‑Alogba, urged residents to embrace love, compassion, unity, and generosity this festive season.",
+        image: IjdBuilding,
+        link:
+          "https://www.theimpactnewspaper.com/2025/12/25/ijede-chair-urges-christians-to-embrace-love-kindness-at-christmas/",
+        date: "Dec 25, 2025",
+      },
+
+      // Dec 23, 2025 — Roads Grading Across Ijede
+      {
+        id: 2,
+        title: "Hon. Gbadebo‑Alogba Improves Connectivity With Grading Of Major Roads",
+        description:
+          "To enhance daily commuting, the Ijede LCDA Chairman commenced grading of major roads across the council, improving connectivity and easing travel for residents.",
+        image: IjdBuilding,
+        link:
+          "https://www.theimpactnewspaper.com/2025/12/23/hon-gbadebo-alogba-improves-connectivity-with-grading-of-major-roads/",
+        date: "Dec 23, 2025",
+      },
+
+      // Dec 12, 2025 — Budget Proposal for 2026
+      {
+        id: 3,
+        title: "Ijede LCDA Chair Presents N5.12b Appropriation Bill With Focus On Infrastructure & Human Capital",
+        description:
+          "Hon. Motunrayo Gbadebo‑Alogba presented the 2026 appropriation bill emphasizing infrastructural support and human‑capital development across all wards of Ijede LCDA.",
+        image: IjdBuilding,
+        link:
+          "https://www.theimpactnewspaper.com/2025/12/12/ijede-lcda-chair-presents-n5-12b-appropriation-bill-with-focus-on-infrastructure-human-capital-development/",
+        date: "Dec 12, 2025",
+      },
+
+      // Dec 3, 2025 — Budget Focus On Key Sectors
+      {
+        id: 4,
+        title: "Budget: Ijede LCDA Focuses On Education, Healthcare & Skills Development",
+        description:
+          "A 3‑day budget retreat culminated in plans prioritizing education, healthcare, skills empowerment and welfare, underlining the council’s development agenda for 2026.",
+        image: IjdBuilding,
+        link:
+          "https://www.theimpactnewspaper.com/2025/12/03/budget-ijede-lcda-focuses-on-education-healthcare-skills-development-others/",
+        date: "Dec 3, 2025",
+      },
+
+      // Nov 27, 2025 — Legislative Building Commissioning
+      {
+        id: 5,
         title: "Ijede LCDA Commissions New Legislative & Customary Court Complex",
         description:
-          "Council Chairman Hon. Motunrayo Gbadebo-Alogba has commissioned a new two-storey Legislative & Customary Court Complex named after late Yeye Fausat Gbadebo-Alogba, providing modern legislative chamber and court facilities for the Council. This marks a significant milestone for legislative and judicial infrastructure in Ijede.",
+          "Council Chairman Hon. Motunrayo Gbadebo‑Alogba has commissioned a new two‑storey Legislative & Customary Court Complex named after late Yeye Fausat Gbadebo‑Alogba.",
         image: IjdBuilding,
         link:
           "https://www.theimpactnewspaper.com/2025/11/27/legacy-project-ijede-chair-hon-gbadebo-alogba-commissions-legislative-customary-building/",
         date: "Nov 27, 2025",
       },
 
-      // Nov 12, 2025
+      // Nov 12, 2025 — 100% Budget Performance
       {
-        id: 2,
+        id: 6,
         title: "Ijede LCDA Achieves 100% 2025 Budget Performance",
         description:
-          "Council reports full execution of 2025 budget — multiple projects completed; 2026 stakeholders’ consultative forum launched for future planning.",
+          "Council reports full execution of 2025 budget — multiple projects completed; stakeholders’ forum launched for future planning.",
         image: IjdBuilding,
         link:
           "https://www.theimpactnewspaper.com/2025/11/12/ijede-lcda-achieves-100-y2025-budget-performance-due-to-proper-planning-council/",
         date: "Nov 12, 2025",
       },
 
-      // Nov 6, 2025
+      // Nov 12, 2025 — Ajasa Info: Stakeholders Consult Forum
       {
-        id: 3,
+        id: 7,
+        title: "Ijede LCDA Hosts Stakeholders’ Consultative Forum Ahead Of Y2026 Budget",
+        description:
+          "Hon. Motunrayo Gbadebo‑Alogba outlined development priorities including infrastructure, education, healthcare, youth empowerment, and community projects at the two‑day Budget Stakeholders Forum.",
+        image: IjdBuilding,
+        link:
+          "https://ajasainfo.com/2025/11/12/ijede-lcda-hosts-stakeholders-consultative-forum-ahead-of-y2026-budget-ajasa-info/",
+        date: "Nov 12, 2025",
+      },
+
+      // Nov 6, 2025 — Classroom Construction at Methodist Primary School
+      {
+        id: 8,
         title:
           "Ijede LCDA Monitors Classroom Construction at Methodist Primary School, Oke-Eletu",
         description:
@@ -123,9 +183,9 @@ export default function NewsUpdates() {
         date: "Nov 6, 2025",
       },
 
-      // Oct 16, 2025
+      // Oct 16, 2025 — Food Security Commitment
       {
-        id: 4,
+        id: 9,
         title:
           "Ijede LCDA Chairman Reaffirms Commitment to Food Security on World Food Day",
         description:
@@ -136,9 +196,33 @@ export default function NewsUpdates() {
         date: "Oct 16, 2025",
       },
 
-      // Sept 23, 2025
+      // Oct 14, 2025 — Seyi Tinubu Felicitation
       {
-        id: 5,
+        id: 10,
+        title: "Seyi Tinubu Is A Young Visionary Leader, Beacon Of Hope – Ijede LCDA Chair",
+        description:
+          "Hon. Motunrayo Gbadebo-Alogba congratulated Seyi Tinubu on his 40th birthday, describing him as a beacon of hope and visionary leader committed to youth empowerment and national development.",
+        image: IjdBuilding,
+        link:
+          "https://www.theimpactnewspaper.com/2025/10/14/seyi-tinubu-is-a-young-visionary-leader-beacon-of-hope-ijede-lcda-chair/",
+        date: "Oct 14, 2025",
+      },
+
+      // Oct 15, 2025 — Asiwaju Basorun Birthday Felicitation
+      {
+        id: 11,
+        title: "Birthday: Ijede LCDA Chairman, Hon. Gbadebo – Alogba Congratulates Asiwaju Basorun",
+        description:
+          "Hon. Motunrayo Gbadebo-Alogba extended heartfelt birthday congratulations to Asiwaju Olorunfunmi Basorun, recognizing his service and leadership to the community.",
+        image: IjdBuilding,
+        link:
+          "https://www.theimpactnewspaper.com/2025/10/15/birthday-ijede-lcda-chairman-hon-gbadebo-alogba-congratulates-asiwaju-basorun/",
+        date: "Oct 15, 2025",
+      },
+
+      // Sept 23, 2025 — Classroom & Sanitation Projects
+      {
+        id: 12,
         title: "Ijede LCDA Launches New Classroom & Sanitation Projects",
         description:
           "Flag-off of new classroom and toilet blocks in four primary schools to improve education and hygiene.",
@@ -148,35 +232,22 @@ export default function NewsUpdates() {
         date: "Sept 23, 2025",
       },
 
-      // Sept 20, 2025
+      // Sept 20, 2025 — Renovated Classrooms & Health Centre
       {
-        id: 6,
+        id: 13,
         title:
           "Ijede LCDA Benefits From Abiru’s Touch: Renovated Classrooms & Health Centre Commissioned",
         description:
-          "Renovated block of classrooms at Luwasa Junior School and upgraded Abule Eko Health Centre now open for residents.",
+          "Renovated classroom block at Luwasa Junior School and upgraded Abule Eko Health Centre now open for residents.",
         image: IjdBuilding,
         link:
           "https://ajasainfo.com/2025/09/20/ijede-lcda-benefits-from-abirus-touch-renovated-block-of-classrooms-at-luwasa-junior-school-abule-eko-health-centre-commissioned-ajasa-info/",
         date: "Sept 20, 2025",
       },
 
-      // Sept 19, 2025
+      // May 25, 2025 — Elemu Social Base Club
       {
-        id: 7,
-        title:
-          "Senator Abiru Unveils New Classrooms & Upgraded Health Centre",
-        description:
-          "Senator Mukhail Abiru commissioned renovated classroom block at Luwasa Junior School and reopened the refurbished Abule-Eko Primary Healthcare Centre.",
-        image: IjdBuilding,
-        link:
-          "https://ikorodunewsnetwork.com/2025/09/19/abiru-unveils-new-classrooms-upgraded-health-centre-in-ijede-inn-nigeria-%E2%98%86/",
-        date: "Sept 19, 2025",
-      },
-
-      // May 25, 2025
-      {
-        id: 8,
+        id: 14,
         title: "Ijede LCDA Recognizes Elemu Social Base Club",
         description:
           "The Elemu Social Base Club is officially recognised to advance grassroots development.",
@@ -186,9 +257,9 @@ export default function NewsUpdates() {
         date: "May 25, 2025",
       },
 
-      // May 3, 2025
+      // May 3, 2025 — 8 km Road Construction
       {
-        id: 9,
+        id: 15,
         title:
           "Hon. Aro Moshood Abiodun Flags Off 8 km Road Construction in Ijede LCDA",
         description:
@@ -199,9 +270,9 @@ export default function NewsUpdates() {
         date: "May 3, 2025",
       },
 
-      // Feb 26, 2025
+      // Feb 26, 2025 — Skilled Entrepreneurs Graduation
       {
-        id: 10,
+        id: 16,
         title: "Ijede LCDA Graduates Skilled Entrepreneurs",
         description:
           "317 graduates from the Skill Acquisition Centre receive start-up tools.",
@@ -215,14 +286,16 @@ export default function NewsUpdates() {
 
   const startIndex = (page - 1) * pageSize;
   const displayedNews = news.slice(startIndex, startIndex + pageSize);
-
   const totalPages = Math.ceil(news.length / pageSize);
 
   return (
     <div className="news-section">
       <div className="news-header">
         <h2>Latest News & Updates</h2>
-        <p>Stay informed about recent developments, projects, and community news from Ijede LCDA.</p>
+        <p>
+          Stay informed about recent developments, projects, and community news
+          from Ijede LCDA.
+        </p>
       </div>
 
       <div className="news-grid">

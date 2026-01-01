@@ -678,6 +678,7 @@ import Footer from "./Footer";
 import ChairmanSection from "./ChairmanSection";
 import Newsletter from "./Newsletter";
 import HomeSection from "./HomeSection";
+import BudgetRetreatGallery from "./BudgetRetreatGallery";
 
 export default function IjedeLcda() {
   const [currentHero, setCurrentHero] = useState(0);
@@ -712,7 +713,7 @@ export default function IjedeLcda() {
         </div>
         <div className="topbar-right">
           <span className="topbar-icon">📧</span>
-        <a href="mailto:ijedelcda@yahoo.com">ijedelcda@yahoo.com</a>
+        <a href="mailto:Ijedelcda@yahoo.com">Ijedelcda@yahoo.com</a>
         </div>
       </div>
 
@@ -823,8 +824,10 @@ export default function IjedeLcda() {
       <Newsletter />
 
         <HomeSection />
+         <BudgetRetreatGallery />
       {/* News & Updates */}
       <NewsUpdates />
+       
 
       {/* Footer */}
       <Footer />

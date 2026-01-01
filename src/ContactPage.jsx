@@ -47,7 +47,7 @@ const ContactPage = () => {
         <div className="contact-card">
           <FaEnvelope className="contact-icon" />
           <h3>Email Us</h3>
-          <p>ijedelcda@yahoo.com</p>
+          <p>Ijedelcda@yahoo.com</p>
         </div>
         <div className="contact-card">
           <FaPhone className="contact-icon" />
@@ -82,7 +82,7 @@ const ContactPage = () => {
             <form onSubmit={handleSubmit}>
               <input type="hidden" name="access_key" value="35cdeada-5ffe-43af-9b3c-49cd6c3bb1a3" />
               <input type="hidden" name="subject" value="New Contact Form Submission" />
-              <input type="hidden" name="to_email" value="ijedelcda@yahoo.com" />
+              <input type="hidden" name="to_email" value="Ijedelcda@yahoo.com" />
 
               <input type="text" name="name" placeholder="Your Name" required />
               <input type="email" name="email" placeholder="Your Email" required />

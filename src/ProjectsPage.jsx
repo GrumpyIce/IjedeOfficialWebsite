@@ -43,10 +43,23 @@ import leg5 from "./assets/leg5.jpg";
 import leg6 from "./assets/leg6.jpg";
 import leg7 from "./assets/leg7.jpg";
 
+/* ✅ Newly added N-series images (.jpeg) */
+import n1 from "./assets/n1.jpeg";
+import n2 from "./assets/n2.jpeg";
+import n3 from "./assets/n3.jpeg";
+import n4 from "./assets/n4.jpeg";
+import n5 from "./assets/n5.jpeg";
+import n6 from "./assets/n6.jpeg";
+import n7 from "./assets/n7.jpeg";
+import n8 from "./assets/n8.jpeg";
+import n9 from "./assets/n9.jpeg";
+import n10 from "./assets/n10.jpeg";
+
 export default function ProjectsPage() {
   const projects = [
+    n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, // ✅ N-series images now .jpeg
     leg1, leg2, leg3, leg4, leg5, leg6, leg7,
-     proj1, proj2, proj3, proj4, proj5, proj6, proj7, proj8,
+    proj1, proj2, proj3, proj4, proj5, proj6, proj7, proj8,
     class1, class2, class3,
     B2S2, Back2Sch, Car1, Car2, Car3, Car4,
     Classroom1, Classroom2, Commissioning1, Commissioning2,
@@ -160,7 +173,7 @@ export default function ProjectsPage() {
                 borderRadius: "12px",
                 overflow: "hidden",
                 boxShadow: "0 6px 18px rgba(0,0,0,0.15)",
-                backgroundColor: "#000", // ✅ hides white gaps
+                backgroundColor: "#000",
                 height: "260px",
               }}
             >
@@ -170,7 +183,7 @@ export default function ProjectsPage() {
                 style={{
                   width: "100%",
                   height: "100%",
-                  objectFit: "cover", // ✅ fills box neatly
+                  objectFit: "cover",
                   transition: "transform 0.3s ease",
                 }}
                 onMouseOver={(e) =>
